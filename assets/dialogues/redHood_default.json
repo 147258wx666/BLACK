@@ -1,0 +1,19 @@
+{
+  "characters": {
+    "hero":    { "name": "Hero",    "portrait": "lihui/malePlayer.png" },
+    "redHood": { "name": "Red Hood", "portrait": "lihui/RedHood.png" }
+  },
+  "startNodeId": "n1",
+  "nodes": [
+    { "id": "n1", "speaker": "hero", "text": "Excuse me, are you alright? You look lost.", "next": "n2" },
+    { "id": "n2", "speaker": "redHood", "text": "Oh! You startled me... I'm fine, just picking flowers for my grandmother.", "next": "n3" },
+    { "id": "n3", "speaker": "hero", "text": "Your grandmother? Where does she live? I'm heading through the forest and could check on her.", "choices": [
+      { "text": "Tell me, I'll make sure she's safe.", "next": "n4" },
+      { "text": "I just need directions, that's all.", "next": "n5" }
+    ]},
+    { "id": "n4", "speaker": "redHood", "text": "That's kind of you... She lives past the second grove, in the cottage by the old oak tree. But please, the woods are dangerous after dark.", "next": "n6" },
+    { "id": "n5", "speaker": "redHood", "text": "Go through two groves, then look for the old oak tree. Her cottage is right beside it.", "next": "n6" },
+    { "id": "n6", "speaker": "hero", "text": "I'll keep that in mind. Stay safe out here.", "next": "n7" },
+    { "id": "n7", "speaker": "redHood", "text": "Thank you! I should hurry now, grandmother will be worried. Goodbye!", "next": null }
+  ]
+}

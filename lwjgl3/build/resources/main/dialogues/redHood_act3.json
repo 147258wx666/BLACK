@@ -1,0 +1,19 @@
+{
+  "characters": {
+    "hero":    { "name": "Hero",    "portrait": "lihui/malePlayer.png" },
+    "redHood": { "name": "Red Hood", "portrait": "lihui/RedHood.png" }
+  },
+  "startNodeId": "n1",
+  "nodes": [
+    { "id": "n1", "speaker": "hero", "text": "Red Hood! It's me again. The forest is getting darker — have you reached your grandmother yet?", "next": "n2" },
+    { "id": "n2", "speaker": "redHood", "text": "Not yet... I stopped to pick more flowers. She loves them so much.", "next": "n3" },
+    { "id": "n3", "speaker": "hero", "text": "I heard something moving in the bushes earlier. You shouldn't stay here alone.", "choices": [
+      { "text": "Let me walk you to her cottage.", "next": "n4" },
+      { "text": "Just tell me where she lives. I'll go ahead.", "next": "n5" }
+    ]},
+    { "id": "n4", "speaker": "redHood", "text": "You'd do that? Her cottage is just beyond this grove, behind the third tree with red leaves. But let me gather these flowers first — it'll only be a moment.", "next": "n6" },
+    { "id": "n5", "speaker": "redHood", "text": "Past the red-leafed trees, you'll see a small cottage. Please knock three times — she's hard of hearing. I'll catch up after I finish here.", "next": "n6" },
+    { "id": "n6", "speaker": "hero", "text": "Something feels wrong about this forest. Be careful, Red Hood.", "next": "n7" },
+    { "id": "n7", "speaker": "redHood", "text": "I will! Just a few more flowers and I'll be on my way. Thank you for worrying about me.", "next": null }
+  ]
+}
